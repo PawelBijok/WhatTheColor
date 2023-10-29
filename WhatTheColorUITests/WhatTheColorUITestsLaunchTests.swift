@@ -2,7 +2,7 @@
 //  WhatTheColorUITestsLaunchTests.swift
 //  WhatTheColorUITests
 //
-//  Created by Paweł Bijok on 28/10/2023.
+//  Created by Paweł Bijok on 29/10/2023.
 //
 
 import XCTest

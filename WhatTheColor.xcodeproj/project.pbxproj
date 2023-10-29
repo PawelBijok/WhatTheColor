@@ -7,62 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E23443282AEDADBE0027DE0F /* WhatTheColorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23443272AEDADBE0027DE0F /* WhatTheColorApp.swift */; };
-		E234432A2AEDADBE0027DE0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23443292AEDADBE0027DE0F /* ContentView.swift */; };
-		E234432C2AEDADBF0027DE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E234432B2AEDADBF0027DE0F /* Assets.xcassets */; };
-		E234432F2AEDADBF0027DE0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E234432E2AEDADBF0027DE0F /* Preview Assets.xcassets */; };
-		E234433A2AEDADBF0027DE0F /* WhatTheColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23443392AEDADBF0027DE0F /* WhatTheColorTests.swift */; };
-		E23443442AEDADBF0027DE0F /* WhatTheColorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23443432AEDADBF0027DE0F /* WhatTheColorUITests.swift */; };
-		E23443462AEDADBF0027DE0F /* WhatTheColorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23443452AEDADBF0027DE0F /* WhatTheColorUITestsLaunchTests.swift */; };
+		E2648BB12AEE9C7E0059D7D0 /* WhatTheColorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BB02AEE9C7E0059D7D0 /* WhatTheColorApp.swift */; };
+		E2648BB32AEE9C7E0059D7D0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BB22AEE9C7E0059D7D0 /* SettingsView.swift */; };
+		E2648BB52AEE9C7F0059D7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2648BB42AEE9C7F0059D7D0 /* Assets.xcassets */; };
+		E2648BB82AEE9C7F0059D7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2648BB72AEE9C7F0059D7D0 /* Preview Assets.xcassets */; };
+		E2648BC32AEE9C7F0059D7D0 /* WhatTheColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BC22AEE9C7F0059D7D0 /* WhatTheColorTests.swift */; };
+		E2648BCD2AEE9C7F0059D7D0 /* WhatTheColorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BCC2AEE9C7F0059D7D0 /* WhatTheColorUITests.swift */; };
+		E2648BCF2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BCE2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift */; };
+		E2648BDC2AEE9F5F0059D7D0 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BDB2AEE9F5F0059D7D0 /* ApplicationMenu.swift */; };
+		E2648BDF2AEEA5150059D7D0 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BDE2AEEA5150059D7D0 /* StatusBarController.swift */; };
+		E2648BE12AEEA5430059D7D0 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BE02AEEA5430059D7D0 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E23443362AEDADBF0027DE0F /* PBXContainerItemProxy */ = {
+		E2648BBF2AEE9C7F0059D7D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E234431C2AEDADBE0027DE0F /* Project object */;
+			containerPortal = E2648BA52AEE9C7E0059D7D0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E23443232AEDADBE0027DE0F;
+			remoteGlobalIDString = E2648BAC2AEE9C7E0059D7D0;
 			remoteInfo = WhatTheColor;
 		};
-		E23443402AEDADBF0027DE0F /* PBXContainerItemProxy */ = {
+		E2648BC92AEE9C7F0059D7D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E234431C2AEDADBE0027DE0F /* Project object */;
+			containerPortal = E2648BA52AEE9C7E0059D7D0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E23443232AEDADBE0027DE0F;
+			remoteGlobalIDString = E2648BAC2AEE9C7E0059D7D0;
 			remoteInfo = WhatTheColor;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E23443242AEDADBE0027DE0F /* WhatTheColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatTheColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E23443272AEDADBE0027DE0F /* WhatTheColorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorApp.swift; sourceTree = "<group>"; };
-		E23443292AEDADBE0027DE0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E234432B2AEDADBF0027DE0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E234432E2AEDADBF0027DE0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E23443302AEDADBF0027DE0F /* WhatTheColor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatTheColor.entitlements; sourceTree = "<group>"; };
-		E23443352AEDADBF0027DE0F /* WhatTheColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatTheColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E23443392AEDADBF0027DE0F /* WhatTheColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorTests.swift; sourceTree = "<group>"; };
-		E234433F2AEDADBF0027DE0F /* WhatTheColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatTheColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E23443432AEDADBF0027DE0F /* WhatTheColorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorUITests.swift; sourceTree = "<group>"; };
-		E23443452AEDADBF0027DE0F /* WhatTheColorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2648BAD2AEE9C7E0059D7D0 /* WhatTheColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatTheColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2648BB02AEE9C7E0059D7D0 /* WhatTheColorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorApp.swift; sourceTree = "<group>"; };
+		E2648BB22AEE9C7E0059D7D0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E2648BB42AEE9C7F0059D7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2648BB72AEE9C7F0059D7D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2648BB92AEE9C7F0059D7D0 /* WhatTheColor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatTheColor.entitlements; sourceTree = "<group>"; };
+		E2648BBE2AEE9C7F0059D7D0 /* WhatTheColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatTheColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2648BC22AEE9C7F0059D7D0 /* WhatTheColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorTests.swift; sourceTree = "<group>"; };
+		E2648BC82AEE9C7F0059D7D0 /* WhatTheColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatTheColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2648BCC2AEE9C7F0059D7D0 /* WhatTheColorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorUITests.swift; sourceTree = "<group>"; };
+		E2648BCE2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2648BDB2AEE9F5F0059D7D0 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
+		E2648BDE2AEEA5150059D7D0 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		E2648BE02AEEA5430059D7D0 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E23443212AEDADBE0027DE0F /* Frameworks */ = {
+		E2648BAA2AEE9C7E0059D7D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E23443322AEDADBF0027DE0F /* Frameworks */ = {
+		E2648BBB2AEE9C7F0059D7D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E234433C2AEDADBF0027DE0F /* Frameworks */ = {
+		E2648BC52AEE9C7F0059D7D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,73 +78,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E234431B2AEDADBE0027DE0F = {
+		E2648BA42AEE9C7E0059D7D0 = {
 			isa = PBXGroup;
 			children = (
-				E23443262AEDADBE0027DE0F /* WhatTheColor */,
-				E23443382AEDADBF0027DE0F /* WhatTheColorTests */,
-				E23443422AEDADBF0027DE0F /* WhatTheColorUITests */,
-				E23443252AEDADBE0027DE0F /* Products */,
+				E2648BAF2AEE9C7E0059D7D0 /* WhatTheColor */,
+				E2648BC12AEE9C7F0059D7D0 /* WhatTheColorTests */,
+				E2648BCB2AEE9C7F0059D7D0 /* WhatTheColorUITests */,
+				E2648BAE2AEE9C7E0059D7D0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E23443252AEDADBE0027DE0F /* Products */ = {
+		E2648BAE2AEE9C7E0059D7D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E23443242AEDADBE0027DE0F /* WhatTheColor.app */,
-				E23443352AEDADBF0027DE0F /* WhatTheColorTests.xctest */,
-				E234433F2AEDADBF0027DE0F /* WhatTheColorUITests.xctest */,
+				E2648BAD2AEE9C7E0059D7D0 /* WhatTheColor.app */,
+				E2648BBE2AEE9C7F0059D7D0 /* WhatTheColorTests.xctest */,
+				E2648BC82AEE9C7F0059D7D0 /* WhatTheColorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E23443262AEDADBE0027DE0F /* WhatTheColor */ = {
+		E2648BAF2AEE9C7E0059D7D0 /* WhatTheColor */ = {
 			isa = PBXGroup;
 			children = (
-				E23443272AEDADBE0027DE0F /* WhatTheColorApp.swift */,
-				E23443292AEDADBE0027DE0F /* ContentView.swift */,
-				E234432B2AEDADBF0027DE0F /* Assets.xcassets */,
-				E23443302AEDADBF0027DE0F /* WhatTheColor.entitlements */,
-				E234432D2AEDADBF0027DE0F /* Preview Content */,
+				E2648BDD2AEEA5010059D7D0 /* Helpers */,
+				E2648BB02AEE9C7E0059D7D0 /* WhatTheColorApp.swift */,
+				E2648BDB2AEE9F5F0059D7D0 /* ApplicationMenu.swift */,
+				E2648BB22AEE9C7E0059D7D0 /* SettingsView.swift */,
+				E2648BB42AEE9C7F0059D7D0 /* Assets.xcassets */,
+				E2648BB92AEE9C7F0059D7D0 /* WhatTheColor.entitlements */,
+				E2648BB62AEE9C7F0059D7D0 /* Preview Content */,
 			);
 			path = WhatTheColor;
 			sourceTree = "<group>";
 		};
-		E234432D2AEDADBF0027DE0F /* Preview Content */ = {
+		E2648BB62AEE9C7F0059D7D0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E234432E2AEDADBF0027DE0F /* Preview Assets.xcassets */,
+				E2648BB72AEE9C7F0059D7D0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E23443382AEDADBF0027DE0F /* WhatTheColorTests */ = {
+		E2648BC12AEE9C7F0059D7D0 /* WhatTheColorTests */ = {
 			isa = PBXGroup;
 			children = (
-				E23443392AEDADBF0027DE0F /* WhatTheColorTests.swift */,
+				E2648BC22AEE9C7F0059D7D0 /* WhatTheColorTests.swift */,
 			);
 			path = WhatTheColorTests;
 			sourceTree = "<group>";
 		};
-		E23443422AEDADBF0027DE0F /* WhatTheColorUITests */ = {
+		E2648BCB2AEE9C7F0059D7D0 /* WhatTheColorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E23443432AEDADBF0027DE0F /* WhatTheColorUITests.swift */,
-				E23443452AEDADBF0027DE0F /* WhatTheColorUITestsLaunchTests.swift */,
+				E2648BCC2AEE9C7F0059D7D0 /* WhatTheColorUITests.swift */,
+				E2648BCE2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift */,
 			);
 			path = WhatTheColorUITests;
+			sourceTree = "<group>";
+		};
+		E2648BDD2AEEA5010059D7D0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E2648BDE2AEEA5150059D7D0 /* StatusBarController.swift */,
+				E2648BE02AEEA5430059D7D0 /* EventMonitor.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E23443232AEDADBE0027DE0F /* WhatTheColor */ = {
+		E2648BAC2AEE9C7E0059D7D0 /* WhatTheColor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E23443492AEDADBF0027DE0F /* Build configuration list for PBXNativeTarget "WhatTheColor" */;
+			buildConfigurationList = E2648BD22AEE9C7F0059D7D0 /* Build configuration list for PBXNativeTarget "WhatTheColor" */;
 			buildPhases = (
-				E23443202AEDADBE0027DE0F /* Sources */,
-				E23443212AEDADBE0027DE0F /* Frameworks */,
-				E23443222AEDADBE0027DE0F /* Resources */,
+				E2648BA92AEE9C7E0059D7D0 /* Sources */,
+				E2648BAA2AEE9C7E0059D7D0 /* Frameworks */,
+				E2648BAB2AEE9C7E0059D7D0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -146,69 +163,69 @@
 			);
 			name = WhatTheColor;
 			productName = WhatTheColor;
-			productReference = E23443242AEDADBE0027DE0F /* WhatTheColor.app */;
+			productReference = E2648BAD2AEE9C7E0059D7D0 /* WhatTheColor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E23443342AEDADBF0027DE0F /* WhatTheColorTests */ = {
+		E2648BBD2AEE9C7F0059D7D0 /* WhatTheColorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E234434C2AEDADBF0027DE0F /* Build configuration list for PBXNativeTarget "WhatTheColorTests" */;
+			buildConfigurationList = E2648BD52AEE9C7F0059D7D0 /* Build configuration list for PBXNativeTarget "WhatTheColorTests" */;
 			buildPhases = (
-				E23443312AEDADBF0027DE0F /* Sources */,
-				E23443322AEDADBF0027DE0F /* Frameworks */,
-				E23443332AEDADBF0027DE0F /* Resources */,
+				E2648BBA2AEE9C7F0059D7D0 /* Sources */,
+				E2648BBB2AEE9C7F0059D7D0 /* Frameworks */,
+				E2648BBC2AEE9C7F0059D7D0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E23443372AEDADBF0027DE0F /* PBXTargetDependency */,
+				E2648BC02AEE9C7F0059D7D0 /* PBXTargetDependency */,
 			);
 			name = WhatTheColorTests;
 			productName = WhatTheColorTests;
-			productReference = E23443352AEDADBF0027DE0F /* WhatTheColorTests.xctest */;
+			productReference = E2648BBE2AEE9C7F0059D7D0 /* WhatTheColorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E234433E2AEDADBF0027DE0F /* WhatTheColorUITests */ = {
+		E2648BC72AEE9C7F0059D7D0 /* WhatTheColorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E234434F2AEDADBF0027DE0F /* Build configuration list for PBXNativeTarget "WhatTheColorUITests" */;
+			buildConfigurationList = E2648BD82AEE9C7F0059D7D0 /* Build configuration list for PBXNativeTarget "WhatTheColorUITests" */;
 			buildPhases = (
-				E234433B2AEDADBF0027DE0F /* Sources */,
-				E234433C2AEDADBF0027DE0F /* Frameworks */,
-				E234433D2AEDADBF0027DE0F /* Resources */,
+				E2648BC42AEE9C7F0059D7D0 /* Sources */,
+				E2648BC52AEE9C7F0059D7D0 /* Frameworks */,
+				E2648BC62AEE9C7F0059D7D0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E23443412AEDADBF0027DE0F /* PBXTargetDependency */,
+				E2648BCA2AEE9C7F0059D7D0 /* PBXTargetDependency */,
 			);
 			name = WhatTheColorUITests;
 			productName = WhatTheColorUITests;
-			productReference = E234433F2AEDADBF0027DE0F /* WhatTheColorUITests.xctest */;
+			productReference = E2648BC82AEE9C7F0059D7D0 /* WhatTheColorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E234431C2AEDADBE0027DE0F /* Project object */ = {
+		E2648BA52AEE9C7E0059D7D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					E23443232AEDADBE0027DE0F = {
+					E2648BAC2AEE9C7E0059D7D0 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
-					E23443342AEDADBF0027DE0F = {
+					E2648BBD2AEE9C7F0059D7D0 = {
 						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = E23443232AEDADBE0027DE0F;
+						TestTargetID = E2648BAC2AEE9C7E0059D7D0;
 					};
-					E234433E2AEDADBF0027DE0F = {
+					E2648BC72AEE9C7F0059D7D0 = {
 						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = E23443232AEDADBE0027DE0F;
+						TestTargetID = E2648BAC2AEE9C7E0059D7D0;
 					};
 				};
 			};
-			buildConfigurationList = E234431F2AEDADBE0027DE0F /* Build configuration list for PBXProject "WhatTheColor" */;
+			buildConfigurationList = E2648BA82AEE9C7E0059D7D0 /* Build configuration list for PBXProject "WhatTheColor" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,36 +233,36 @@
 				en,
 				Base,
 			);
-			mainGroup = E234431B2AEDADBE0027DE0F;
-			productRefGroup = E23443252AEDADBE0027DE0F /* Products */;
+			mainGroup = E2648BA42AEE9C7E0059D7D0;
+			productRefGroup = E2648BAE2AEE9C7E0059D7D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E23443232AEDADBE0027DE0F /* WhatTheColor */,
-				E23443342AEDADBF0027DE0F /* WhatTheColorTests */,
-				E234433E2AEDADBF0027DE0F /* WhatTheColorUITests */,
+				E2648BAC2AEE9C7E0059D7D0 /* WhatTheColor */,
+				E2648BBD2AEE9C7F0059D7D0 /* WhatTheColorTests */,
+				E2648BC72AEE9C7F0059D7D0 /* WhatTheColorUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E23443222AEDADBE0027DE0F /* Resources */ = {
+		E2648BAB2AEE9C7E0059D7D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E234432F2AEDADBF0027DE0F /* Preview Assets.xcassets in Resources */,
-				E234432C2AEDADBF0027DE0F /* Assets.xcassets in Resources */,
+				E2648BB82AEE9C7F0059D7D0 /* Preview Assets.xcassets in Resources */,
+				E2648BB52AEE9C7F0059D7D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E23443332AEDADBF0027DE0F /* Resources */ = {
+		E2648BBC2AEE9C7F0059D7D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E234433D2AEDADBF0027DE0F /* Resources */ = {
+		E2648BC62AEE9C7F0059D7D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,49 +272,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E23443202AEDADBE0027DE0F /* Sources */ = {
+		E2648BA92AEE9C7E0059D7D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E234432A2AEDADBE0027DE0F /* ContentView.swift in Sources */,
-				E23443282AEDADBE0027DE0F /* WhatTheColorApp.swift in Sources */,
+				E2648BB32AEE9C7E0059D7D0 /* SettingsView.swift in Sources */,
+				E2648BE12AEEA5430059D7D0 /* EventMonitor.swift in Sources */,
+				E2648BDF2AEEA5150059D7D0 /* StatusBarController.swift in Sources */,
+				E2648BDC2AEE9F5F0059D7D0 /* ApplicationMenu.swift in Sources */,
+				E2648BB12AEE9C7E0059D7D0 /* WhatTheColorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E23443312AEDADBF0027DE0F /* Sources */ = {
+		E2648BBA2AEE9C7F0059D7D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E234433A2AEDADBF0027DE0F /* WhatTheColorTests.swift in Sources */,
+				E2648BC32AEE9C7F0059D7D0 /* WhatTheColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E234433B2AEDADBF0027DE0F /* Sources */ = {
+		E2648BC42AEE9C7F0059D7D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23443462AEDADBF0027DE0F /* WhatTheColorUITestsLaunchTests.swift in Sources */,
-				E23443442AEDADBF0027DE0F /* WhatTheColorUITests.swift in Sources */,
+				E2648BCF2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift in Sources */,
+				E2648BCD2AEE9C7F0059D7D0 /* WhatTheColorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E23443372AEDADBF0027DE0F /* PBXTargetDependency */ = {
+		E2648BC02AEE9C7F0059D7D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E23443232AEDADBE0027DE0F /* WhatTheColor */;
-			targetProxy = E23443362AEDADBF0027DE0F /* PBXContainerItemProxy */;
+			target = E2648BAC2AEE9C7E0059D7D0 /* WhatTheColor */;
+			targetProxy = E2648BBF2AEE9C7F0059D7D0 /* PBXContainerItemProxy */;
 		};
-		E23443412AEDADBF0027DE0F /* PBXTargetDependency */ = {
+		E2648BCA2AEE9C7F0059D7D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E23443232AEDADBE0027DE0F /* WhatTheColor */;
-			targetProxy = E23443402AEDADBF0027DE0F /* PBXContainerItemProxy */;
+			target = E2648BAC2AEE9C7E0059D7D0 /* WhatTheColor */;
+			targetProxy = E2648BC92AEE9C7F0059D7D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		E23443472AEDADBF0027DE0F /* Debug */ = {
+		E2648BD02AEE9C7F0059D7D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -360,7 +380,7 @@
 			};
 			name = Debug;
 		};
-		E23443482AEDADBF0027DE0F /* Release */ = {
+		E2648BD12AEE9C7F0059D7D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -415,7 +435,7 @@
 			};
 			name = Release;
 		};
-		E234434A2AEDADBF0027DE0F /* Debug */ = {
+		E2648BD32AEE9C7F0059D7D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -425,8 +445,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhatTheColor/Preview Content\"";
-				DEVELOPMENT_TEAM = 4DC5UZY4A9;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -442,7 +460,7 @@
 			};
 			name = Debug;
 		};
-		E234434B2AEDADBF0027DE0F /* Release */ = {
+		E2648BD42AEE9C7F0059D7D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -452,8 +470,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhatTheColor/Preview Content\"";
-				DEVELOPMENT_TEAM = 4DC5UZY4A9;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -469,14 +485,13 @@
 			};
 			name = Release;
 		};
-		E234434D2AEDADBF0027DE0F /* Debug */ = {
+		E2648BD62AEE9C7F0059D7D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4DC5UZY4A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
@@ -488,14 +503,13 @@
 			};
 			name = Debug;
 		};
-		E234434E2AEDADBF0027DE0F /* Release */ = {
+		E2648BD72AEE9C7F0059D7D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4DC5UZY4A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
@@ -507,13 +521,12 @@
 			};
 			name = Release;
 		};
-		E23443502AEDADBF0027DE0F /* Debug */ = {
+		E2648BD92AEE9C7F0059D7D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4DC5UZY4A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.bijok.WhatTheColorUITests;
@@ -524,13 +537,12 @@
 			};
 			name = Debug;
 		};
-		E23443512AEDADBF0027DE0F /* Release */ = {
+		E2648BDA2AEE9C7F0059D7D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4DC5UZY4A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.bijok.WhatTheColorUITests;
@@ -544,43 +556,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E234431F2AEDADBE0027DE0F /* Build configuration list for PBXProject "WhatTheColor" */ = {
+		E2648BA82AEE9C7E0059D7D0 /* Build configuration list for PBXProject "WhatTheColor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E23443472AEDADBF0027DE0F /* Debug */,
-				E23443482AEDADBF0027DE0F /* Release */,
+				E2648BD02AEE9C7F0059D7D0 /* Debug */,
+				E2648BD12AEE9C7F0059D7D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E23443492AEDADBF0027DE0F /* Build configuration list for PBXNativeTarget "WhatTheColor" */ = {
+		E2648BD22AEE9C7F0059D7D0 /* Build configuration list for PBXNativeTarget "WhatTheColor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E234434A2AEDADBF0027DE0F /* Debug */,
-				E234434B2AEDADBF0027DE0F /* Release */,
+				E2648BD32AEE9C7F0059D7D0 /* Debug */,
+				E2648BD42AEE9C7F0059D7D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E234434C2AEDADBF0027DE0F /* Build configuration list for PBXNativeTarget "WhatTheColorTests" */ = {
+		E2648BD52AEE9C7F0059D7D0 /* Build configuration list for PBXNativeTarget "WhatTheColorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E234434D2AEDADBF0027DE0F /* Debug */,
-				E234434E2AEDADBF0027DE0F /* Release */,
+				E2648BD62AEE9C7F0059D7D0 /* Debug */,
+				E2648BD72AEE9C7F0059D7D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E234434F2AEDADBF0027DE0F /* Build configuration list for PBXNativeTarget "WhatTheColorUITests" */ = {
+		E2648BD82AEE9C7F0059D7D0 /* Build configuration list for PBXNativeTarget "WhatTheColorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E23443502AEDADBF0027DE0F /* Debug */,
-				E23443512AEDADBF0027DE0F /* Release */,
+				E2648BD92AEE9C7F0059D7D0 /* Debug */,
+				E2648BDA2AEE9C7F0059D7D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E234431C2AEDADBE0027DE0F /* Project object */;
+	rootObject = E2648BA52AEE9C7E0059D7D0 /* Project object */;
 }

@@ -2,12 +2,12 @@
 //  ContentView.swift
 //  WhatTheColor
 //
-//  Created by Paweł Bijok on 28/10/2023.
+//  Created by Paweł Bijok on 29/10/2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct SettingsView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    SettingsView()
 }
