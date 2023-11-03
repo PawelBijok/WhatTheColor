@@ -12,6 +12,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate{
     var popover = NSPopover.init()
     var statusBar: StatusBarController?
+    let mouseEventListener = MouseEventListener()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
             
@@ -24,9 +25,11 @@ class AppDelegate: NSObject, NSApplicationDelegate{
             
             
             statusBar = StatusBarController.init(popover)
+        
+        mouseEventListener.startListening()
         }
 
         func applicationWillTerminate(_ aNotification: Notification) {
-            // Insert code here to tear down your application
+            mouseEventListener.stopListening()
         }
 }
