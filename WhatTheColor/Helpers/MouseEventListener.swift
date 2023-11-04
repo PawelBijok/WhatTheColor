@@ -6,12 +6,17 @@
 //
 
 
+struct MousePosition{
+    let x:Float
+    let y:Float
+}
+
 import Cocoa
 
 class MouseEventListener {
     var eventMonitor: Any?
     
-    var lastMouseLocation : (Int, Int) = (0,0)
+    var lastMouseLocation : MousePosition = MousePosition(x: 0, y: 0)
     
     func startListening() {
         let mask: NSEvent.EventTypeMask = [.mouseMoved, .leftMouseDown]
@@ -20,14 +25,14 @@ class MouseEventListener {
         eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: mask) { event in
             let eventType = event.type
             if(eventType == .leftMouseDown){
-                let (x,y) = self.lastMouseLocation
-                print("Thats a click on x: \(x) y:\(y)")
-                self.getColorAtMouseLocation(mouseX: x, mouseY: y)
+            
+                print("Thats a click on x: \(self.lastMouseLocation.x) y:\(self.lastMouseLocation.y)")
+                let pos = self.lastMouseLocation;
+                self.getColorAtMouseLocation(mouseX: pos.x, mouseY: pos.y)
             }
             else if (eventType == .mouseMoved){
                 let mouseLocation = event.locationInWindow
-                print("Mouse moved to: \(mouseLocation)")
-                self.lastMouseLocation = (Int(mouseLocation.x), Int(mouseLocation.y))
+                self.lastMouseLocation = MousePosition(x: Float(mouseLocation.x), y: Float(mouseLocation.y))
                 
             }
         }
@@ -40,18 +45,18 @@ class MouseEventListener {
         }
     }
     
-    func getColorAtMouseLocation(mouseX:Int, mouseY:Int) {
+    func getColorAtMouseLocation(mouseX:Float, mouseY:Float) {
         if let screen = NSScreen.main {
             let frame = screen.frame
-                            let x = mouseX
-                            let y = Int(frame.height) - mouseY
+            let x = Int(mouseX)
+            let y = Int(Float(frame.height) - mouseY)
 
-                            if let screenShot = CGDisplayCreateImage(CGMainDisplayID()) {
-                                let bitmapRep = NSBitmapImageRep(cgImage: screenShot)
-                                if x < bitmapRep.pixelsWide && y < bitmapRep.pixelsHigh {
-                                    print (bitmapRep.colorAt(x: x, y: y))
-                                }
-                            }
+            if let screenShot = CGDisplayCreateImage(CGMainDisplayID()) {
+                let bitmapRep = NSBitmapImageRep(cgImage: screenShot)
+                if x < bitmapRep.pixelsWide && y < bitmapRep.pixelsHigh {
+                    print (bitmapRep.colorAt(x: x, y: y) ?? "no color")
+                }
+            }
         }
     }
 }
