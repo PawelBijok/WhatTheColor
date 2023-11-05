@@ -14,9 +14,11 @@
 		E2648BC32AEE9C7F0059D7D0 /* WhatTheColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BC22AEE9C7F0059D7D0 /* WhatTheColorTests.swift */; };
 		E2648BCD2AEE9C7F0059D7D0 /* WhatTheColorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BCC2AEE9C7F0059D7D0 /* WhatTheColorUITests.swift */; };
 		E2648BCF2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BCE2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift */; };
-		E2648BDC2AEE9F5F0059D7D0 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BDB2AEE9F5F0059D7D0 /* ApplicationMenu.swift */; };
 		E2648BDF2AEEA5150059D7D0 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BDE2AEEA5150059D7D0 /* StatusBarController.swift */; };
 		E2648BE12AEEA5430059D7D0 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BE02AEEA5430059D7D0 /* EventMonitor.swift */; };
+		E26B4A422AF5A05800525EAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B4A412AF5A05800525EAE /* AppDelegate.swift */; };
+		E26B4A442AF5A39000525EAE /* MouseEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B4A432AF5A39000525EAE /* MouseEventListener.swift */; };
+		E26B4A482AF7F05A00525EAE /* ColorExtenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B4A472AF7F05A00525EAE /* ColorExtenions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +50,11 @@
 		E2648BC82AEE9C7F0059D7D0 /* WhatTheColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatTheColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2648BCC2AEE9C7F0059D7D0 /* WhatTheColorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorUITests.swift; sourceTree = "<group>"; };
 		E2648BCE2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E2648BDB2AEE9F5F0059D7D0 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
 		E2648BDE2AEEA5150059D7D0 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		E2648BE02AEEA5430059D7D0 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		E26B4A412AF5A05800525EAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E26B4A432AF5A39000525EAE /* MouseEventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseEventListener.swift; sourceTree = "<group>"; };
+		E26B4A472AF7F05A00525EAE /* ColorExtenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtenions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,11 @@
 		E2648BAF2AEE9C7E0059D7D0 /* WhatTheColor */ = {
 			isa = PBXGroup;
 			children = (
-				E2648BDD2AEEA5010059D7D0 /* Helpers */,
 				E2648BB02AEE9C7E0059D7D0 /* WhatTheColorApp.swift */,
-				E2648BDB2AEE9F5F0059D7D0 /* ApplicationMenu.swift */,
-				E2648BB22AEE9C7E0059D7D0 /* SettingsView.swift */,
+				E26B4A412AF5A05800525EAE /* AppDelegate.swift */,
+				E2648BDD2AEEA5010059D7D0 /* Helpers */,
+				E26B4A462AF7F02D00525EAE /* Views */,
+				E26B4A452AF7F00700525EAE /* Extensions */,
 				E2648BB42AEE9C7F0059D7D0 /* Assets.xcassets */,
 				E2648BB92AEE9C7F0059D7D0 /* WhatTheColor.entitlements */,
 				E2648BB62AEE9C7F0059D7D0 /* Preview Content */,
@@ -142,8 +147,25 @@
 			children = (
 				E2648BDE2AEEA5150059D7D0 /* StatusBarController.swift */,
 				E2648BE02AEEA5430059D7D0 /* EventMonitor.swift */,
+				E26B4A432AF5A39000525EAE /* MouseEventListener.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E26B4A452AF7F00700525EAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E26B4A472AF7F05A00525EAE /* ColorExtenions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E26B4A462AF7F02D00525EAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2648BB22AEE9C7E0059D7D0 /* SettingsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,10 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26B4A422AF5A05800525EAE /* AppDelegate.swift in Sources */,
 				E2648BB32AEE9C7E0059D7D0 /* SettingsView.swift in Sources */,
 				E2648BE12AEEA5430059D7D0 /* EventMonitor.swift in Sources */,
 				E2648BDF2AEEA5150059D7D0 /* StatusBarController.swift in Sources */,
-				E2648BDC2AEE9F5F0059D7D0 /* ApplicationMenu.swift in Sources */,
+				E26B4A482AF7F05A00525EAE /* ColorExtenions.swift in Sources */,
+				E26B4A442AF5A39000525EAE /* MouseEventListener.swift in Sources */,
 				E2648BB12AEE9C7E0059D7D0 /* WhatTheColorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,18 +464,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = WhatTheColor/WhatTheColor.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhatTheColor/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DC5UZY4A9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatTheColor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "What The Color";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_UILaunchStoryboardName = AppDelegate.swift;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.bijok.WhatTheColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -465,18 +498,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = WhatTheColor/WhatTheColor.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhatTheColor/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DC5UZY4A9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatTheColor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "What The Color";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_UILaunchStoryboardName = AppDelegate.swift;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.bijok.WhatTheColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
