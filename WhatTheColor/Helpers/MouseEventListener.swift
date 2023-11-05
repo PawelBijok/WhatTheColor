@@ -21,14 +21,15 @@ class MouseEventListener {
     func startListening() {
         let mask: NSEvent.EventTypeMask = [.mouseMoved, .leftMouseDown]
         
-     
+        
         eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: mask) { event in
             let eventType = event.type
             if(eventType == .leftMouseDown){
-            
+                
                 print("Thats a click on x: \(self.lastMouseLocation.x) y:\(self.lastMouseLocation.y)")
                 let pos = self.lastMouseLocation;
-                self.getColorAtMouseLocation(mouseX: pos.x, mouseY: pos.y)
+                let color = self.getColorAtMouseLocation(mouseX: pos.x, mouseY: pos.y)
+                print(color?.asHexadecimal ?? "no color")
             }
             else if (eventType == .mouseMoved){
                 let mouseLocation = event.locationInWindow
@@ -45,18 +46,25 @@ class MouseEventListener {
         }
     }
     
-    func getColorAtMouseLocation(mouseX:Float, mouseY:Float) {
+    func getColorAtMouseLocation(mouseX:Float, mouseY:Float) -> NSColor? {
         if let screen = NSScreen.main {
             let frame = screen.frame
-            let x = Int(mouseX)
-            let y = Int(Float(frame.height) - mouseY)
-
+            let scaling = Float(screen.backingScaleFactor);
+            
+            let screenShotX = Int(mouseX * scaling)
+            let screenShotY = Int((Float(frame.height) - mouseY) * scaling)
+            
             if let screenShot = CGDisplayCreateImage(CGMainDisplayID()) {
                 let bitmapRep = NSBitmapImageRep(cgImage: screenShot)
-                if x < bitmapRep.pixelsWide && y < bitmapRep.pixelsHigh {
-                    print (bitmapRep.colorAt(x: x, y: y) ?? "no color")
+                if screenShotX < bitmapRep.pixelsWide && screenShotY < bitmapRep.pixelsHigh {
+                    if let color = bitmapRep.colorAt(x: screenShotX, y: screenShotY){
+                        return color
+                    }
+                    
                 }
             }
+            
         }
+        return nil
     }
 }

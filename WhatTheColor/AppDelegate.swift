@@ -15,18 +15,13 @@ class AppDelegate: NSObject, NSApplicationDelegate{
     let mouseEventListener = MouseEventListener()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-            
             let contentView = SettingsView()
 
-            
             popover.contentSize = NSSize(width: 900, height: 500)
             popover.contentViewController = NSHostingController(rootView: contentView)
             
-            
-            
             statusBar = StatusBarController.init(popover)
-        
-        mouseEventListener.startListening()
+            mouseEventListener.startListening()
         }
 
         func applicationWillTerminate(_ aNotification: Notification) {
