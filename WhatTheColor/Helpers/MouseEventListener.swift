@@ -12,13 +12,14 @@ struct MousePosition{
 }
 
 import Cocoa
+import SwiftUI
 
 class MouseEventListener {
     var eventMonitor: Any?
     
     var lastMouseLocation : MousePosition = MousePosition(x: 0, y: 0)
     
-    func startListening() {
+    func startListening( onColorSelected: @escaping (NSColor)->Void) {
         let mask: NSEvent.EventTypeMask = [.mouseMoved, .leftMouseDown]
         
         
@@ -28,8 +29,13 @@ class MouseEventListener {
                 
                 print("Thats a click on x: \(self.lastMouseLocation.x) y:\(self.lastMouseLocation.y)")
                 let pos = self.lastMouseLocation;
-                let color = self.getColorAtMouseLocation(mouseX: pos.x, mouseY: pos.y)
-                print(color?.asHexadecimal ?? "no color")
+                if let nsColor = self.getColorAtMouseLocation(mouseX: pos.x, mouseY: pos.y) {
+                    print(nsColor.asHexadecimal)
+                    onColorSelected(nsColor)
+                    
+                }
+                
+                
             }
             else if (eventType == .mouseMoved){
                 let mouseLocation = event.locationInWindow

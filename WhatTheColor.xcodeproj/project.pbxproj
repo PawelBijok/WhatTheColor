@@ -16,6 +16,7 @@
 		E2648BCF2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BCE2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift */; };
 		E2648BDF2AEEA5150059D7D0 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BDE2AEEA5150059D7D0 /* StatusBarController.swift */; };
 		E2648BE12AEEA5430059D7D0 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BE02AEEA5430059D7D0 /* EventMonitor.swift */; };
+		E26A0BE72AFE3F6E00F655DC /* ColorsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26A0BE62AFE3F6E00F655DC /* ColorsStore.swift */; };
 		E26B4A422AF5A05800525EAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B4A412AF5A05800525EAE /* AppDelegate.swift */; };
 		E26B4A442AF5A39000525EAE /* MouseEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B4A432AF5A39000525EAE /* MouseEventListener.swift */; };
 		E26B4A482AF7F05A00525EAE /* ColorExtenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B4A472AF7F05A00525EAE /* ColorExtenions.swift */; };
@@ -53,6 +54,7 @@
 		E2648BCE2AEE9C7F0059D7D0 /* WhatTheColorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E2648BDE2AEEA5150059D7D0 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		E2648BE02AEEA5430059D7D0 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		E26A0BE62AFE3F6E00F655DC /* ColorsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsStore.swift; sourceTree = "<group>"; };
 		E26B4A412AF5A05800525EAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26B4A432AF5A39000525EAE /* MouseEventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseEventListener.swift; sourceTree = "<group>"; };
 		E26B4A472AF7F05A00525EAE /* ColorExtenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtenions.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		E2648BAF2AEE9C7E0059D7D0 /* WhatTheColor */ = {
 			isa = PBXGroup;
 			children = (
+				E26A0BE52AFE3F6100F655DC /* Store */,
 				E2648BB02AEE9C7E0059D7D0 /* WhatTheColorApp.swift */,
 				E26B4A412AF5A05800525EAE /* AppDelegate.swift */,
 				E2648BDD2AEEA5010059D7D0 /* Helpers */,
@@ -152,6 +155,14 @@
 				E26B4A432AF5A39000525EAE /* MouseEventListener.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E26A0BE52AFE3F6100F655DC /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				E26A0BE62AFE3F6E00F655DC /* ColorsStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		E26B4A452AF7F00700525EAE /* Extensions */ = {
@@ -308,6 +319,7 @@
 				E26B4A482AF7F05A00525EAE /* ColorExtenions.swift in Sources */,
 				E26B4A442AF5A39000525EAE /* MouseEventListener.swift in Sources */,
 				E2648BB12AEE9C7E0059D7D0 /* WhatTheColorApp.swift in Sources */,
+				E26A0BE72AFE3F6E00F655DC /* ColorsStore.swift in Sources */,
 				E26B4A4A2AF83C0D00525EAE /* RecentColorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

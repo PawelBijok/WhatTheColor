@@ -16,14 +16,14 @@ class AppDelegate: NSObject, NSApplicationDelegate{
     
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-            let contentView = RecentColorsView()
+            let colorStore = ColorsStore()
+            let contentView = RecentColorsView(colorsStore: colorStore)
         
-
             popover.contentSize = NSSize(width: 400, height: 500)
             popover.contentViewController = NSHostingController(rootView: contentView)
             
             statusBar = StatusBarController.init(popover)
-            mouseEventListener.startListening()
+        mouseEventListener.startListening(onColorSelected: colorStore.addColor)
         }
 
         func applicationWillTerminate(_ aNotification: Notification) {

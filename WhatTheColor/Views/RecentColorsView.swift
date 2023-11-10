@@ -10,33 +10,39 @@ import SwiftUI
 
 
 struct RecentColorsView: View {
+    @ObservedObject var colorsStore: ColorsStore
     
-    @State private var colors = [Color.red, Color.pink, Color.green]
     
     
-    func addColor()->Void{
-        colors.insert(Color.orange, at: 0)
-    }
+   
     
     var body: some View {
         VStack{
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
-                    ForEach(colors, id: \.self) { color in
+                    ForEach(self.colorsStore.colors, id: \.self) { color in
                         ZStack(alignment: /*@START_MENU_TOKEN@*/Alignment(horizontal: .center, vertical: .center)/*@END_MENU_TOKEN@*/){
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(color)
-                                .frame(width: 100, height: 100)
-                            Text("color")
+                            ColorTile(color: color)
                         }
                         
                     }
                     
                 }.padding(10)
             }
-            Button(action: addColor){
-                Text("Add color")
-            }
+           
         }
+    }
+}
+
+
+struct ColorTile: View {
+    let color: NSColor
+    
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 10)
+            .fill(Color(nsColor: color))
+            .frame(width: 100, height: 100)
+        Text("\(color.asHexadecimal)").foregroundStyle(color.isDark ? Color.white : Color.black)
     }
 }
