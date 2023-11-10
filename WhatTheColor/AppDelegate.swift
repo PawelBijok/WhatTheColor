@@ -13,9 +13,11 @@ class AppDelegate: NSObject, NSApplicationDelegate{
     var popover = NSPopover.init()
     var statusBar: StatusBarController?
     let mouseEventListener = MouseEventListener()
+    
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
             let contentView = RecentColorsView()
+        
 
             popover.contentSize = NSSize(width: 400, height: 500)
             popover.contentViewController = NSHostingController(rootView: contentView)
