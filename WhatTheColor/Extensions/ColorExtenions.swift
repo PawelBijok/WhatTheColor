@@ -14,7 +14,6 @@ extension NSColor {
         let redHex = self.colorPartToHex(number: self.redComponent)
         let greenHex = self.colorPartToHex(number: self.greenComponent)
         let blueHex = self.colorPartToHex(number: self.blueComponent)
-        print("brightness: \(self.brightnessComponent)")
         return "#\(redHex)\(greenHex)\(blueHex)"
     }
     
