@@ -23,7 +23,7 @@ struct RecentColorsView: View {
         VStack{
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
-                    ForEach(1..<self.colorsStore.colors.count, id: \.self) { item in
+                    ForEach(0..<self.colorsStore.colors.count, id: \.self) { item in
                         let color = self.colorsStore.colors[item]
                         
                         ColorTile(color: color, onClick: onColorClicked)
@@ -31,7 +31,6 @@ struct RecentColorsView: View {
                     
                 }.padding(10)
             }
-            
         }
     }
 }
