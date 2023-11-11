@@ -23,10 +23,19 @@ struct RecentColorsView: View {
         VStack{
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
-                    ForEach(0..<self.colorsStore.colors.count, id: \.self) { item in
-                        let color = self.colorsStore.colors[item]
+                    if(self.colorsStore.colors.count == 0){
+                        Text("No colors yet").padding(30)
                         
-                        ColorTile(color: color, onClick: onColorClicked)
+                    }
+                    else {
+                        
+                        
+                        ForEach(0..<self.colorsStore.colors.count, id: \.self) { item in
+                            let color = self.colorsStore.colors[item]
+                            
+                            ColorTile(color: color, onClick: onColorClicked)
+                        }
+                        
                     }
                     
                 }.padding(10)
@@ -39,20 +48,24 @@ struct RecentColorsView: View {
 struct ColorTile: View {
     let color: NSColor
     let onClick: (NSColor)->Void
+    var label: String? = nil
+    var disabled: Bool = false
     
     
     var body: some View {
-        Button(action: {
-            onClick(color)
-        }) {
-            ZStack(alignment: Alignment(horizontal: .center, vertical: .center)) {
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color(nsColor: color))
-                    .frame(width: 100, height: 100)
-                Text("\(color.asHexadecimal)").foregroundStyle(color.isDark ? Color.white : Color.black)
+        ZStack(alignment: Alignment(horizontal: .center, vertical: .center)) {
+            RoundedRectangle(cornerRadius: 10)
+                .fill(Color(nsColor: color))
+                .frame(width: 100, height: 100)
+            VStack{
+                Text("\(label ?? color.asHexadecimal)").foregroundStyle(color.isDark ? Color.white : Color.black).font(.subheadline)
+                Button(action: {
+                    onClick(color)
+                }, label: {
+                    Image(systemName: "doc.on.clipboard").foregroundColor(color.isDark ? Color.white : Color.black)
+                }).buttonStyle(.borderless)
             }
+            
         }
-        .buttonStyle(PlainButtonStyle())
-        
     }
 }
