@@ -22,8 +22,9 @@ struct RecentColorsView: View {
     var body: some View {
         VStack{
             ScrollView(.horizontal, showsIndicators: false){
-                HStack{
+                HStack(alignment: .center){
                     if(self.colorsStore.colors.count == 0){
+                        
                         Text("No colors yet").padding(30)
                         
                     }
@@ -51,6 +52,8 @@ struct ColorTile: View {
     var label: String? = nil
     var disabled: Bool = false
     
+    @State private var hovering = false
+    
     
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .center)) {
@@ -63,9 +66,17 @@ struct ColorTile: View {
                     onClick(color)
                 }, label: {
                     Image(systemName: "doc.on.clipboard").foregroundColor(color.isDark ? Color.white : Color.black)
-                }).buttonStyle(.borderless)
+                }).buttonStyle(.bordered).controlSize(.large).opacity(hovering ? 1 : 0).animation(.easeOut(duration: 0.2), value: hovering)
             }
             
-        }
+        }.onHover(perform: { hovering in
+            self.hovering = hovering
+        })
     }
 }
+
+#Preview(body: {
+    ColorTile(color: NSColor(red: 0.2, green: 0.5, blue: 0.8, alpha: 1),onClick: {color in
+        print("color")
+    }).padding(30)
+})
