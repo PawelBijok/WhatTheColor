@@ -13,6 +13,9 @@ class ColorsStore: ObservableObject {
    
     
     func addColor(color: NSColor){
+        if(colors.count > 0 && colors[0] == color){
+            return;
+        }
         colors.insert(color, at: 0)
     }
     
