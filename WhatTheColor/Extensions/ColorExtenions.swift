@@ -14,7 +14,6 @@ extension NSColor {
         let redHex = self.colorPartToHex(number: self.redComponent)
         let greenHex = self.colorPartToHex(number: self.greenComponent)
         let blueHex = self.colorPartToHex(number: self.blueComponent)
-        print("contrast with white: \(calculateLuminance())")
         return "#\(redHex)\(greenHex)\(blueHex)"
         
     }

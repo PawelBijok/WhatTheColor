@@ -27,10 +27,10 @@ class MouseEventListener {
             let eventType = event.type
             if(eventType == .leftMouseDown){
                 
-                print("Thats a click on x: \(self.lastMouseLocation.x) y:\(self.lastMouseLocation.y)")
+               
                 let pos = self.lastMouseLocation;
                 if let nsColor = self.getColorAtMouseLocation(mouseX: pos.x, mouseY: pos.y) {
-                    print(nsColor.asHexadecimal)
+                    
                     onColorSelected(nsColor)
                     
                 }
