@@ -15,6 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate{
     let mouseEventListener = MouseEventListener()
     let startHotKey = HotKey(key: .w, modifiers: [.command, .shift])
     let stopHotKey = HotKey(key: .escape, modifiers: [])
+    let cursor = NSCursor()
     
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -30,10 +31,13 @@ class AppDelegate: NSObject, NSApplicationDelegate{
         
         startHotKey.keyDownHandler = {
             print("Pressed start at \(Date())")
+            
+            
             self.mouseEventListener.startListening(onColorSelected: colorStore.addColor)
         }
         stopHotKey.keyDownHandler = {
             print("Pressed stop at \(Date())")
+            
             self.mouseEventListener.stopListening()
         }
         
