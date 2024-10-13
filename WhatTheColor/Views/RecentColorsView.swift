@@ -21,14 +21,21 @@ struct RecentColorsView: View {
     
     var body: some View {
         VStack{
-            ScrollView(.horizontal, showsIndicators: false){
-                HStack(alignment: .center){
-                    if(self.colorsStore.colors.count == 0){
-                        
-                        Text("No colors yet").padding(30)
-                        
+            if(self.colorsStore.colors.count == 0){
+                VStack(spacing: 10){
+                    
+                    Text("No colors selected yet").font(.title)
+                    
+                    HStack{
+                       Text("Use")
+                        Text("⌘ + Shift + W").font(.headline)
+                        Text("to point at the color")
                     }
-                    else {
+                }.padding(30)
+            }
+            else {
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack(alignment: .center){
                         
                         
                         ForEach(0..<self.colorsStore.colors.count, id: \.self) { item in
@@ -52,10 +59,9 @@ struct RecentColorsView: View {
                         }
                         
                         
-                    }
-                    
-                }.padding(10)
-            }
+                        
+                    }.padding(10)
+                }}
         }
     }
 }
@@ -94,7 +100,7 @@ struct PreviewView: View {
     @ObservedObject var colorsStore: ColorsStore
     init(colorsStore: ColorsStore) {
         self.colorsStore = colorsStore
-        colorsStore.addColor(color: NSColor.yellow)
+//        colorsStore.addColor(color: NSColor.yellow)
     }
     var body: some View {
         RecentColorsView(colorsStore: colorsStore)
