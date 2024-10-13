@@ -65,9 +65,10 @@ class AppDelegate: NSObject, NSApplicationDelegate{
     func getAndSaveColorAtPosition(mousePosition: MousePosition)->Void{
         let store = self.colorStore
         Task{
-            
             if let color = await screenshotManager.getColorAtMouseLocation(mouseX: mousePosition.x, mouseY: mousePosition.y) {
-                store.addColor(color: color)
+                await MainActor.run {
+                    store.addColor(color: color)
+                   }
             }
         }
         
