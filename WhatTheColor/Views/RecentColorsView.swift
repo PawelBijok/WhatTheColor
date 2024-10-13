@@ -36,6 +36,21 @@ struct RecentColorsView: View {
                             
                             ColorTile(color: color, onClick: onColorClicked)
                         }
+                        Divider().frame(height: 100).padding()
+                        ZStack{
+                            
+                            RoundedRectangle(cornerRadius: 10).fill(Color(NSColor.red)).frame(width: 100, height: 100)
+                            VStack{
+                                
+                                Button(action: {
+                                    colorsStore.clearColors()
+                                }, label: {
+                                    Image(systemName: "trash.fill").foregroundColor(Color.black)
+                                }).buttonStyle(.bordered).controlSize(.large)
+                                Text("Delete all").foregroundStyle(Color.black)
+                            }
+                        }
+                        
                         
                     }
                     
@@ -75,8 +90,17 @@ struct ColorTile: View {
     }
 }
 
+struct PreviewView: View {
+    @ObservedObject var colorsStore: ColorsStore
+    init(colorsStore: ColorsStore) {
+        self.colorsStore = colorsStore
+        colorsStore.addColor(color: NSColor.yellow)
+    }
+    var body: some View {
+        RecentColorsView(colorsStore: colorsStore)
+    }
+}
+
 #Preview(body: {
-    ColorTile(color: NSColor(red: 0.2, green: 0.5, blue: 0.8, alpha: 1),onClick: {color in
-        print("color")
-    }).padding(30)
+    PreviewView(colorsStore: ColorsStore())
 })

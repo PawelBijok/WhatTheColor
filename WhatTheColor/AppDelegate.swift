@@ -14,11 +14,20 @@ class AppDelegate: NSObject, NSApplicationDelegate{
     var statusBar: StatusBarController?
     let mouseEventListener = MouseEventListener()
     let startHotKey = HotKey(key: .w, modifiers: [.command, .shift])
-    let stopHotKey = HotKey(key: .escape, modifiers: [])
+    let stopHotKey = HotKey(key: .escape, modifiers: [.command])
+    var registerNextClick: Bool = false
+    let screenshotManager = ScreenshotManager()
+    var colorStore: ColorsStore
+    
+    override
+    init() {
+        self.colorStore = ColorsStore()
+    }
+    
+    
     
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let colorStore = ColorsStore()
         let contentView = RecentColorsView(colorsStore: colorStore)
         
         popover.contentSize = NSSize(width: 400, height: 500)
@@ -28,14 +37,40 @@ class AppDelegate: NSObject, NSApplicationDelegate{
         
         print("will register shortcut")
         
+        func stopListening() {
+            print("unregister shortcut")
+            startHotKey.keyDownHandler = nil
+            stopHotKey.keyDownHandler = nil
+        }
+        self.mouseEventListener.startListening(onPointClicked: {point in
+            print("point: \(point)")
+            if(self.registerNextClick){
+                self.registerNextClick = false
+                self.getAndSaveColorAtPosition(mousePosition: point)
+            }
+        } )
+        
         startHotKey.keyDownHandler = {
             print("Pressed start at \(Date())")
-            self.mouseEventListener.startListening(onColorSelected: colorStore.addColor)
+            self.registerNextClick = true
         }
         stopHotKey.keyDownHandler = {
             print("Pressed stop at \(Date())")
-            self.mouseEventListener.stopListening()
+            self.registerNextClick = false
+            
         }
+        
+    }
+    
+    func getAndSaveColorAtPosition(mousePosition: MousePosition)->Void{
+        let store = self.colorStore
+        Task{
+            
+            if let color = await screenshotManager.getColorAtMouseLocation(mouseX: mousePosition.x, mouseY: mousePosition.y) {
+                store.addColor(color: color)
+            }
+        }
+        
         
     }
     
