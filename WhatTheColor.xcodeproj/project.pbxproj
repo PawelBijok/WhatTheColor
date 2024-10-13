@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E25C3F572CBC50F500B18874 /* ScreenshotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C3F562CBC50ED00B18874 /* ScreenshotManager.swift */; };
 		E2648BB12AEE9C7E0059D7D0 /* WhatTheColorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BB02AEE9C7E0059D7D0 /* WhatTheColorApp.swift */; };
 		E2648BB32AEE9C7E0059D7D0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648BB22AEE9C7E0059D7D0 /* SettingsView.swift */; };
 		E2648BB52AEE9C7F0059D7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2648BB42AEE9C7F0059D7D0 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E25C3F562CBC50ED00B18874 /* ScreenshotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotManager.swift; sourceTree = "<group>"; };
 		E2648BAD2AEE9C7E0059D7D0 /* WhatTheColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatTheColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2648BB02AEE9C7E0059D7D0 /* WhatTheColorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheColorApp.swift; sourceTree = "<group>"; };
 		E2648BB22AEE9C7E0059D7D0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		E2648BDD2AEEA5010059D7D0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E25C3F562CBC50ED00B18874 /* ScreenshotManager.swift */,
 				E2648BDE2AEEA5150059D7D0 /* StatusBarController.swift */,
 				E2648BE02AEEA5430059D7D0 /* EventMonitor.swift */,
 				E26B4A432AF5A39000525EAE /* MouseEventListener.swift */,
@@ -332,6 +335,7 @@
 				E26B4A442AF5A39000525EAE /* MouseEventListener.swift in Sources */,
 				E2648BB12AEE9C7E0059D7D0 /* WhatTheColorApp.swift in Sources */,
 				E26A0BE72AFE3F6E00F655DC /* ColorsStore.swift in Sources */,
+				E25C3F572CBC50F500B18874 /* ScreenshotManager.swift in Sources */,
 				E26B4A4A2AF83C0D00525EAE /* RecentColorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +516,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.bijok.WhatTheColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -546,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.bijok.WhatTheColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,6 +602,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.bijok.WhatTheColorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -614,6 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.bijok.WhatTheColorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
